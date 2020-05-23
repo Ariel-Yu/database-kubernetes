@@ -1,5 +1,5 @@
 # Kubernetes, 
-the Container Orchestration Technology
+a Container Orchestration Technology
 
 ## Architecture
 * Node / Worker node / Minion: Worker server/machine
