@@ -12,9 +12,34 @@
 ## Pods kubectl
 ```
 kubectl run <pod_name> --image=<image_name> --restart=Never
-kubectl create deployment <deployment_name> --image=<image_name> → Create a deployment
 kubectl get pods
 kubectl get pods -o wide
 kubectl describe pods
 kubectl delete pod <pod_name>
+
+kubectl create deployment <deployment_name> --image=<image_name> → Create a deployment
+```
+
+## Pods yml
+
+pod-definition.yml
+```
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+  name: ariel-pod
+  labels:
+    app: ariel
+
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
+```
+
+Create a pod with a yaml file
+```
+kubectl create -f pod-definition.yml
 ```
