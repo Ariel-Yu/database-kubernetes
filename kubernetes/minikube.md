@@ -55,6 +55,7 @@ sudo mv minikube /usr/local/bin
 ```
 minikube start
 ```
+This will start a docker conatiner running k8s-minikube image
 
 #### Create a deployment
 ```
@@ -114,8 +115,16 @@ kubectl delete deployment hello-minikube
 > deployment.apps "hello-minikube" deleted
 
 ## Stop Minikube
+```
+minikube stop
+```
+This will stop (kill) a docker conatiner
 
 ## Delete Minikube cluster
+```
+minikube delete
+```
+This will delete (rm) a docker conatiner
 
 ## References
 [https://kubernetes.io/docs/setup/learning-environment/minikube/](https://kubernetes.io/docs/setup/learning-environment/minikube/) 
