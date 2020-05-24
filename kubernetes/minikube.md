@@ -1,5 +1,5 @@
 # Minikube,
-runs a single-node Kubernetes cluster inside a Virtual Machine (VM) locally
+runs a single-node Kubernetes cluster inside a Docker Container or a Virtual Machine locally
 
 * [Check virtualization is supported on Mac OS](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/minikube.md#check-virtualization-is-supported-on-mac-os)
 * [Install kubectl](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/minikube.md#install-kubectl)
@@ -53,9 +53,11 @@ sudo mv minikube /usr/local/bin
 
 ## Start Minikube
 ```
-minikube start
+minikube start --driver=<driver_name>
 ```
-This will start a docker conatiner running k8s-minikube image
+if <driver_name> in `[none, docker]`: This will start a docker conatiner running k8s-minikube image
+
+if <driver_name> == `virtualbox`: This will start minikube in the VM of virtualbox
 
 #### Create a deployment
 ```
