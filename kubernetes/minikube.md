@@ -1,13 +1,13 @@
 # Minikube,
 runs a single-node Kubernetes cluster inside a Virtual Machine (VM) locally
 
-* [Check virtualization is supported on Mac OS](https://github.com/Ariel-Yu/database-kubernetes/blob/master/database/minikube.md#check-virtualization-is-supported-on-mac-os)
-* [Install kubectl](https://github.com/Ariel-Yu/database-kubernetes/blob/master/database/minikube.md#install-kubectl)
-* [Install Minikube](https://github.com/Ariel-Yu/database-kubernetes/blob/master/database/minikube.md#install-minikube)
-* [Start Minikube](https://github.com/Ariel-Yu/database-kubernetes/blob/master/database/minikube.md#start-minikube)
-* [Stop Minikube](https://github.com/Ariel-Yu/database-kubernetes/blob/master/database/minikube.md#stop-minikube)
-* [Delete Minikube cluster](https://github.com/Ariel-Yu/database-kubernetes/blob/master/database/minikube.md#delete-minikube-cluster)
-* [References](https://github.com/Ariel-Yu/database-kubernetes/blob/master/database/minikube.md#references)
+* [Check virtualization is supported on Mac OS](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/minikube.md#check-virtualization-is-supported-on-mac-os)
+* [Install kubectl](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/minikube.md#install-kubectl)
+* [Install Minikube](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/minikube.md#install-minikube)
+* [Start Minikube](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/minikube.md#start-minikube)
+* [Stop Minikube](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/minikube.md#stop-minikube)
+* [Delete Minikube cluster](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/minikube.md#delete-minikube-cluster)
+* [References](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/minikube.md#references)
 
 ## Check virtualization is supported on Mac OS
 ```
