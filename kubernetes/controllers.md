@@ -2,9 +2,9 @@
 
 * [Replication Controllers & ReplicaSets](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#replication-controllers--replicasets)
     * [Replication Controllers yml](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#replication-controllers-yml)
-    * [ReplicaSets yml](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#replicasets-controllers-yml)
-    * [Scale with ReplicaSets](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#scale-with-replicasets)
-* [Node Controller](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#node-controller)
+    * [ReplicaSets yml](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#replicasets-yml)
+    * [Scale with ReplicaSets](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#scale)
+* [Node Controller](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#node-controllers)
 
 ## Replication Controllers & ReplicaSets
 - **High Availability**: A replication controller/replicaset guarantees that there will be always **desired** number of pods running in the cluster
@@ -44,7 +44,8 @@ Create a replication controller with 3 pods with a yaml file
 ```
 kubectl create -f rc-definition.yml
 
-kubectl get replicationcontroller
+kubectl get replicationcontrollers [<replicaion_controller_name>]
+kubectl describe replicationcontrollers [<replicaion_controller_name>]
 kubectl get nodes
 kubectl get pods
 ```
@@ -89,7 +90,7 @@ Create a replicaset with 3 pods with a yaml file
 ```
 kubectl create -f replicaset-definition.yml
 
-kubectl get replicasets
+kubectl get replicasets [<replicaset_name>]
 kubectl describe replicasets [<replicaset_name>]
 kubectl delete replicasets <replicaset_name>
 kubectl get nodes
