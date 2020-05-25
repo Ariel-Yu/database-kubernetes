@@ -1,13 +1,13 @@
 # Controllers
 
-* [Replication Controllers & ReplicaSets]()
-    * [Replication Controllers yml]()
-    * [ReplicaSets yml]()
-    * [Scale with ReplicaSets]()
-* [Node Controller]()
+* [Replication Controllers & ReplicaSets](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#replication-controllers--replicasets)
+    * [Replication Controllers yml](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#replication-controllers-yml)
+    * [ReplicaSets yml](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#replicasets-controllers-yml)
+    * [Scale with ReplicaSets](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#scale-with-replicasets)
+* [Node Controller](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#node-controller)
 
 ## Replication Controllers & ReplicaSets
-- **High Availability**: A replication controller/replicaset guarantees that there will be always specified number of pods running in the cluster
+- **High Availability**: A replication controller/replicaset guarantees that there will be always **desired** number of pods running in the cluster
   - Even a single-pod node should have a replication controller/replicaset
 - **Load Balancing & Scale**: A replication controller/replicaset oversees all the pods across different nodes in the cluster
 - ReplicaSet is the newer way than Replication Controller to oversee all the pods
@@ -99,9 +99,15 @@ kubectl get pods
 ### Scale
 
 ```
-kubectl replace -f replicaset-definition.yml
-kubectl scale --replicas=6 -f replicaset-definition.yml
-kubectl scale --replicat=3 replicaset myapp-replicaset
+kubectl replace -f replicaset-definition.yml -> Replace replicaset settings with the edited file
+kubectl edit replicaset new-replica-set -> Update the definition file of the replicaset in console
+
+kubectl scale --replicas=6 -f replicaset-definition.yml -> Scale up by the definition file. Hint: the file is not modified
+kubectl scale --replicat=3 replicaset myapp-replicaset -> Scale up by cli
+```
+
+```
+kubectl set image replicaset/<replicaset_name> <container_name>:<new_image_name>
 ```
 
 ## Node Controllers
