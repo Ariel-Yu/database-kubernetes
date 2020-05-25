@@ -16,6 +16,7 @@ kubectl get pods
 kubectl get pods -o wide
 kubectl describe pods [<pod_name>]
 kubectl delete pod <pod_name>
+kubectl detele pods -l <label_name>: <label_value>
 
 kubectl create deployment <deployment_name> --image=<image_name> → Create a deployment
 ```
