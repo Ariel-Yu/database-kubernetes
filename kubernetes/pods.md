@@ -14,7 +14,7 @@
 kubectl run <pod_name> --image=<image_name> --restart=Never
 kubectl get pods
 kubectl get pods -o wide
-kubectl describe pods
+kubectl describe pods <pod_name>
 kubectl delete pod <pod_name>
 
 kubectl create deployment <deployment_name> --image=<image_name> → Create a deployment
