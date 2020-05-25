@@ -9,7 +9,7 @@
 ## Replication Controllers & ReplicaSets
 - **High Availability**: A replication controller/replicaset guarantees that there will be always **desired** number of pods running in the cluster
   - Even a single-pod node should have a replication controller/replicaset
-- **Load Balancing & Scale**: A replication controller/replicaset oversees all the pods across different nodes in the cluster
+- **Load Balancing & Scale**: A replication controller/replicaset oversees all the pods across different nodes in the cluster and one can scale up/down the application through the replication controller/replicaset by modifying their definitions
 - ReplicaSet is the newer way than Replication Controller to oversee all the pods
 
 ### Replication Controllers yml
