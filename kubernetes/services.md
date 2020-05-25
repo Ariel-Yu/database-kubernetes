@@ -2,9 +2,12 @@
 
 ## NodePort
 
-- Target port: The port on the pod
-- Port: The port on the service
-- NodePort: The port on the node (30000 ~ 32767)
+- Map ports of the nodes to ports of the pods
+- Make internal pods accessible through the ports of the nodes
+- Ports
+  - Target port: The port on the pod
+  - Port: The port on the service
+  - NodePort: The port on the node (30000 ~ 32767)
 
 Create a service of type NodePort for directing traffic to pods with label: `tier: frontend`. The pods can be in the same node or distributed in many nodes
 ```
@@ -33,7 +36,12 @@ kubectl describe services
 
 ## ClusterIP
 
-Creatre a service with type ClusterIP in front of a group of pods of the same applicaion with label `tier: backend`, ex: frontend, backend, cache, etc. Other applications will access this group of pods through the service
+- A vertual IP created in the cluster for the communication among different services, ex: group of frontend service, group of backend service, ect.
+- Ports
+  - targetPort
+  - port
+
+Creatre a service with type ClusterIP in front of a group of pods of the same applicaion with label `tier: backend`. Other applications will access this group of pods through the service
 ```
 apiVersion: v1
 kind: Service
