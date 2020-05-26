@@ -8,18 +8,20 @@
   * Network namespace
   * Storage
   * Same thread
+* Pod is transient, when a pod is down, pod managers (replicasets, deployments, daemonsets, statefulsets, jobs) are the ones responsible to bring up a new pod
 
 ## Pods kubectl
 ```
 kubectl run <pod_name> --image=<image_name> --restart=Never
 kubectl create -f <pod_definition_file_path_name>
+kubectl create deployment <deployment_name> --image=<image_name> → Create a deployment with a pod
+
 kubectl get pods
 kubectl get pods -o wide
 kubectl describe pods [<pod_name>]
+
 kubectl delete pods <pod_name>
 kubectl detele pods -l <label_name>: <label_value>
-
-kubectl create deployment <deployment_name> --image=<image_name> → Create a deployment
 ```
 
 ## Pods yml
