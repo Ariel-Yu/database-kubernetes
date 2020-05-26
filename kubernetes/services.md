@@ -29,9 +29,13 @@ spec:
 
 ```
 kubectl create -f <service_definition_file>
-kubectl get services
-kubectl get services -o wide
-kubectl describe services
+
+<SHORTNAME of services = svc>
+kubectl get services [<service_name>] 
+kubectl get services [<service_name>] -o wide
+kubectl describe services [<service_name>]
+
+kubectl delete services <service_name>
 ```
 
 ## ClusterIP
