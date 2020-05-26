@@ -3,7 +3,7 @@
 * [Replication Controllers & ReplicaSets](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#replication-controllers--replicasets)
     * [Replication Controllers yml](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#replication-controllers-yml)
     * [ReplicaSets yml](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#replicasets-yml)
-    * [Scale & Update with ReplicaSets](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#scale)
+    * [Scale & Update with ReplicaSets](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#scale--update)
 * [Node Controller](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#node-controllers)
 
 ## Replication Controllers & ReplicaSets
