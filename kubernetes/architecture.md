@@ -1,12 +1,17 @@
 # Kubernetes, 
 a Container Orchestration Technology
 
+- [Architecture](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/architecture.md#architecture)
+- [Agents](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/architecture.md#agents)
+- [Master node vs Worker node](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/architecture.md#master-node-vs-worker-node)
+- [Resources (Objects)](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/architecture.md#resources-(objects))
+
 ## Architecture
 * Worker node / Minion: Worker server/machine
 * Master / Master node: A node that orchestrates all the containers on the nodes within a cluster
 * Cluster: A set of nodes
 
-## Components
+## Agents
 * kube-apiserver: 
     * Serve as the frontend of Kubernetes
     * Users, management devices and CLI all talk to the API server
@@ -48,3 +53,12 @@ a Container Orchestration Technology
     * Carry out actions that are instructed by the master node
 * kube-proxy
 * Container runtime
+
+## Resources (Objects)
+* Pod
+* Namespace
+* Replicaset
+* Deployment
+* Statefulset
+* Job
+* CronJob
