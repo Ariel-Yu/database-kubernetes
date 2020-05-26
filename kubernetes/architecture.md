@@ -10,6 +10,7 @@ a Container Orchestration Technology
 * Worker node / Minion: Worker server/machine
 * Master / Master node: A node that orchestrates all the containers on the nodes within a cluster
 * Cluster: A set of nodes
+   * Resources (CPU, memory, networking, ect) are shared within a cluster from all nodes
 
 ## Agents
 * kube-apiserver: 
