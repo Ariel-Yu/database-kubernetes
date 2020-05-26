@@ -73,5 +73,6 @@ a Container Orchestration Technology
    * Create and kill pods of the same container in sequence
 * Job *
 * CronJob *
+* [Service](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/services.md)
 
 `* Different pod managers, managing pods with different manners`
