@@ -1,6 +1,6 @@
 # Docker basics
 
-## Docker Engine
+## Docker engine
 Docker engine is a server-client application which builds and containerizes other applications. Docker engine includes:
 
 - Docker server:
@@ -50,4 +50,3 @@ Kill and remove all containers from the current docke_compose.yml
 
 # Reference
 - https://docs.docker.com/get-started/overview/#docker-architecture
-
