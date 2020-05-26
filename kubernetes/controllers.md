@@ -3,7 +3,7 @@
 * [Replication Controllers & ReplicaSets](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#replication-controllers--replicasets)
     * [Replication Controllers yml](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#replication-controllers-yml)
     * [ReplicaSets yml](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#replicasets-yml)
-    * [Scale with ReplicaSets](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#scale)
+    * [Scale & Update with ReplicaSets](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#scale)
 * [Node Controller](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#node-controllers)
 
 ## Replication Controllers & ReplicaSets
@@ -90,14 +90,15 @@ Create a replicaset with 3 pods with a yaml file
 ```
 kubectl create -f replicaset-definition.yml
 
+<SHORTNAME of replicasets = rs>
 kubectl get replicasets [<replicaset_name>]
+kubectl get replicasets [<replicaset_name>] -o wide
 kubectl describe replicasets [<replicaset_name>]
+
 kubectl delete replicasets <replicaset_name>
-kubectl get nodes
-kubectl get pods
 ```
 
-### Scale
+### Scale & Update
 
 ```
 kubectl replace -f replicaset-definition.yml -> Replace replicaset settings with the edited file
