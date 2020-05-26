@@ -51,8 +51,8 @@ Create a deployment with a replicaset with 3 pods with a yaml file
 kubectl create -f deployment-definition.yml [--record]
 
 <SHORNAME of deployments = deploy>
-kubectl get deployments
-kubectl get deployments -o wide
+kubectl get deployments [<deployment_name>]
+kubectl get deployments [<deployment_name>] -o wide
 kubectl describe deployments [<deployment_name>]
 
 kubectl delete deployments <deployment_name>
