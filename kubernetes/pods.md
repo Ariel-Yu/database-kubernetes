@@ -17,8 +17,8 @@ kubectl create -f <pod_definition_file>
 kubectl create deployment <deployment_name> --image=<image_name> → Create a deployment with a replicaset and a pod
 
 <SHORTNAME of pods = po>
-kubectl get pods
-kubectl get pods -o wide
+kubectl get pods [<pod_name>]
+kubectl get pods [<pod_name>] -o wide
 kubectl describe pods [<pod_name>]
 
 kubectl delete pods <pod_name>
