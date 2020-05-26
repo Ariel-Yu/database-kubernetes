@@ -45,9 +45,9 @@ Create a replication controller with 3 pods with a yaml file
 kubectl create -f rc-definition.yml
 
 kubectl get replicationcontrollers [<replicaion_controller_name>]
-kubectl describe replicationcontrollers [<replicaion_controller_name>]
-kubectl get nodes
-kubectl get pods
+kubectl get replicationcontrollers [<replicaion_controller_name>] -o wide
+
+kubectl describe replicationcontrollers <replicaion_controller_name>
 ```
 
 ### ReplicaSets yml
