@@ -36,12 +36,12 @@ kubectl describe services
 
 ## ClusterIP
 
-- A vertual IP created in the cluster for the communication among different services, ex: group of frontend service, group of backend service, ect.
+- A virtual IP created in the cluster for the communication among different microservices, ex: group of frontend microservices, group of backend microservices, ect.
 - Ports
   - targetPort
   - port
 
-Creatre a service with type ClusterIP in front of a group of pods of the same applicaion with label `tier: backend`. Other applications will access this group of pods through the service
+Creatre a service with type ClusterIP in front of a group of pods of the same microservice with label `tier: backend`. Other applications will access this group of pods through the service
 ```
 apiVersion: v1
 kind: Service
