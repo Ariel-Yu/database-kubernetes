@@ -13,9 +13,10 @@
 ## Pods kubectl
 ```
 kubectl run <pod_name> --image=<image_name> --restart=Never
-kubectl create -f <pod_definition_file_path_name>
-kubectl create deployment <deployment_name> --image=<image_name> → Create a deployment with a pod
+kubectl create -f <pod_definition_file>
+kubectl create deployment <deployment_name> --image=<image_name> → Create a deployment with a replicaset and a pod
 
+<SHORTNAME of pods = po>
 kubectl get pods
 kubectl get pods -o wide
 kubectl describe pods [<pod_name>]
