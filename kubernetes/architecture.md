@@ -4,7 +4,7 @@ a Container Orchestration Technology
 - [Architecture](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/architecture.md#architecture)
 - [Agents](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/architecture.md#agents)
 - [Master node vs Worker node](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/architecture.md#master-node-vs-worker-node)
-- [Resources (Objects)](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/architecture.md#resources-(objects))
+- [Resources (Objects)](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/architecture.md#resources-objects)
 
 ## Architecture
 * Worker node / Minion: Worker server/machine
@@ -14,13 +14,14 @@ a Container Orchestration Technology
 ## Agents
 * kube-apiserver: 
     * Serve as the frontend of Kubernetes
-    * Users, management devices and CLI all talk to the API server
-    * ***kubectl*** talks to kube-apiserver
+    * API requests talks to kube-apiserver (external to the cluster)
+    * ***kubectl*** talks to kube-apiserver (external to the cluster)
+    * All the other agents talk to the kube-apiserver (internal of the cluster)
 * etcd
     * A distributed key-value store used by Kubernetes to store all the data used to manage the cluster
     * Persist cluster and only cluster states
 * kube-scheduler
-    * Distribute containers among all nodes
+    * Find the right node to distribute containers (pods)
     * Distribute work among all containers on the nodes
 * kube-controller
     * Brain of the orchestration
@@ -29,6 +30,8 @@ a Container Orchestration Technology
     * Types of controller
         * Node controller
         * Replication controller / Replicaset
+* [cloud-controller]
+   * Optional agents for the cluster
 * kubelet
     * The agent that is run on every node in the cluster
     * Ensure that the properties (kube-scheduler, kube-controllers, container, ect) have necessary resources and are run successfully on each node
@@ -39,6 +42,7 @@ a Container Orchestration Technology
     * Underlying software used to run containers ex: Docker
 
 ## Master node vs. Worker node
+
 ### Master node
 * kube-apiserver - what makes the server a master node
 * etcd
@@ -46,6 +50,7 @@ a Container Orchestration Technology
 * kube-controller
 * kubelet
 * kube-proxy
+
 ### Worker node
 * kubelet: 
     * Talk to kube-apiserver on the master node
@@ -55,10 +60,17 @@ a Container Orchestration Technology
 * Container runtime
 
 ## Resources (Objects)
-* Pod
+* [Pod](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/pods.md)
 * Namespace
-* Replicaset
-* Deployment
-* Statefulset
-* Job
-* CronJob
+* [Replicaset](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#replication-controllers--replicasets) *
+   * Ensure that the desired number of pods are running in the cluster. The pods can be deployed on the same or different nodes
+* [Deployment](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/deployments.md) *
+   * Create and kill pods of the same container in random sequence
+* Daemonset *
+   * Ensure that a container is deployed to all the nodes (one pod one node)
+* Statefulset *
+   * Create and kill pods of the same container in sequence
+* Job *
+* CronJob *
+
+`* Different pod managers, managing pods with different manners`
