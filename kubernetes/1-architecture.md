@@ -1,10 +1,10 @@
 # Kubernetes, 
 a Container Orchestration Technology
 
-- [Architecture](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/architecture.md#architecture)
-- [Agents](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/architecture.md#agents)
-- [Master node vs Worker node](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/architecture.md#master-node-vs-worker-node)
-- [Resources (Objects)](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/architecture.md#resources-objects)
+- [Architecture](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/1-architecture.md#architecture)
+- [Agents](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/1-architecture.md#agents)
+- [Master node vs Worker node](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/1-architecture.md#master-node-vs-worker-node)
+- [Resources (Objects)](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/1-architecture.md#resources-objects)
 
 ## Architecture
 * Worker node / Minion: Worker server/machine
