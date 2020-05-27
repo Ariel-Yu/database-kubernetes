@@ -70,7 +70,7 @@ kubectl apply -f <edited_definition_file>
 kubectl set image deployment/<deployment_name> <containers_name>: <image_name>
 ```
 
-Monitor deployments
+How to monitory deployments:
 ```
 kubectl rollout status deployment/<deployment_name>
 kubectl rollout history deployment/<deployment_name>
