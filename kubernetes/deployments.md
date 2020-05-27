@@ -1,11 +1,11 @@
 # Deployments
 
 ## Actions
-- Deploy
-- Update
+- [Deploy](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/deployments.md#deployments-yml)
+- [Update](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/deployments.md#update)
     - Recreate
     - Rolling update  
-- Rollback
+- [Rollback](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/deployments.md#rollback)
 - Pause
 - Resume
 
