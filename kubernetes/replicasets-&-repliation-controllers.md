@@ -1,17 +1,18 @@
 # ReplicaSets & Replication Controllers
 
-* [ReplicaSets & Replication Controllers concept](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#replicasets--replication-controllers-concept)
- * [ReplicaSets](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#replicasets)
- * [Scale & Update with ReplicaSets](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#scale--update)
- * [Replication Controllers](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#replication-controllers)
+* [ReplicaSets & Replication Controllers concept](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/replicasets-%26-repliation-controllers.md#replicasets--replication-controllers-concept)
+ * [ReplicaSets](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/replicasets-%26-repliation-controllers.md#replicasets)
+ * [Scale & Update with ReplicaSets](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/replicasets-%26-repliation-controllers.md#scale--update)
+ * [Replication Controllers](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/replicasets-%26-repliation-controllers.md#replication-controllers)
 
 ## ReplicaSets & Replication Controllers concept
+
 - **High Availability**: A replicaset/replication controller guarantees that there will be always **desired** number of pods running in the cluster
   - Even a single-pod node should have a replicaset/replication controller
 - **Load Balancing & Scale**: A replicaset/replication controller oversees all the pods across different nodes in the cluster and one can scale up/down the application through the replicaset/replication controller by modifying their definitions
 - ReplicaSet is the newer way than Replication Controller to oversee all the pods
 
-### ReplicaSets
+## ReplicaSets
 
 - **selector** under the spec section is required for replicaset
 - A replicaset is assigned to the pods by the definitions under MatchLabels (in this case, pods with `tier: front-end`)
@@ -59,7 +60,7 @@ kubectl describe replicasets [<replicaset_name>]
 kubectl delete replicasets <replicaset_name>
 ```
 
-### Scale & Update
+## Scale & Update
 
 ```
 kubectl replace -f replicaset-definition.yml -> Replace replicaset settings with the edited file
@@ -70,7 +71,7 @@ kubectl scale --replicas=6 -f replicaset-definition.yml -> Scale up by the defin
 kubectl scale --replicat=3 replicaset myapp-replicaset -> Scale up by cli
 ```
 
-### Replication Controllers
+## Replication Controllers
 
 rc-definition.yml
 ```
