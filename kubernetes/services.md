@@ -1,5 +1,19 @@
 # Services
 
+## Serivces kubectl
+
+```
+kubectl create -f <service_definition_file>
+kubectl expose deployment <deployment_name> --port=<port> [--name=<service_name>] [--type=<NodePort | ClusterIP>]
+
+<SHORTNAME of services = svc>
+kubectl get services [<service_name>] 
+kubectl get services [<service_name>] -o wide
+kubectl describe services [<service_name>]
+
+kubectl delete services <service_name>
+```
+
 ## NodePort
 
 - Map ports of the nodes to ports of the pods
@@ -25,17 +39,6 @@ spec:
 
   selector:
     tier: frontend
-```
-
-```
-kubectl create -f <service_definition_file>
-
-<SHORTNAME of services = svc>
-kubectl get services [<service_name>] 
-kubectl get services [<service_name>] -o wide
-kubectl describe services [<service_name>]
-
-kubectl delete services <service_name>
 ```
 
 ## ClusterIP
