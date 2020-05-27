@@ -56,6 +56,7 @@ kubectl create -f replicaset-definition.yml
 kubectl get replicasets [<replicaset_name>]
 kubectl get replicasets [<replicaset_name>] -o wide
 kubectl describe replicasets [<replicaset_name>]
+kubectl explain replicasets
 
 kubectl delete replicasets <replicaset_name>
 ```
@@ -63,12 +64,12 @@ kubectl delete replicasets <replicaset_name>
 ## Scale & Update
 
 ```
+kubectl scale --replicas=6 -f replicaset-definition.yml -> Scale up by the definition file. Hint: the file is not modified
+kubectl scale --replicat=3 replicaset myapp-replicaset -> Scale up by cli
+
 kubectl replace -f replicaset-definition.yml -> Replace replicaset settings with the edited file
 kubectl edit replicaset new-replica-set -> Update the definition file of the replicaset in console
 kubectl set image replicaset/<replicaset_name> <container_name>:<new_image_name>
-
-kubectl scale --replicas=6 -f replicaset-definition.yml -> Scale up by the definition file. Hint: the file is not modified
-kubectl scale --replicat=3 replicaset myapp-replicaset -> Scale up by cli
 ```
 
 ## Replication Controllers
