@@ -1,11 +1,11 @@
 # Kubernetes control tool - kubectl
 
-- [General](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/kubectl.md#general)
-- [Pods](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/kubectl.md#pods---po)
-- [Nodes](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/kubectl.md#nodes---no)
-- [ReplicaSets](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/kubectl.md#replicasets---rs)
-- [Deployments](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/kubectl.md#deployments---deploy)
-- [Services](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/kubectl.md#services---svc)
+- [General](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/4-kubectl.md#general)
+- [Pods](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/4-kubectl.md#pods---po)
+- [Nodes](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/4-kubectl.md#nodes---no)
+- [ReplicaSets](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/4-kubectl.md#replicasets---rs)
+- [Deployments](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/4-kubectl.md#deployments---deploy)
+- [Services](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/4-kubectl.md#services---svc)
 
 ## General
 
