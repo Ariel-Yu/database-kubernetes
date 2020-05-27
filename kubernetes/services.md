@@ -16,6 +16,7 @@ kubectl delete services <service_name>
 
 ## NodePort
 
+- For external requests
 - Map ports of the nodes to ports of the pods
 - Make internal pods accessible through the ports of the nodes
 - Ports
@@ -43,6 +44,7 @@ spec:
 
 ## ClusterIP
 
+- For internal communication
 - A virtual IP created in the cluster for the communication among different microservices, ex: group of frontend microservices, group of backend microservices, ect.
 - Ports
   - targetPort
