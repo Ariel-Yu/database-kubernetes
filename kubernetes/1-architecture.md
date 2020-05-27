@@ -73,6 +73,8 @@ a Container Orchestration Technology
 * Job *
 * CronJob *
 * [Service](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.4-services.md)
+* Endpoint
 * Namespace
+* PersistentVolume
 
 `* Different pod managers, managing pods with different manners`
