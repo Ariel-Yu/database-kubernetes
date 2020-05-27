@@ -49,6 +49,7 @@ spec:
 Create a deployment with a replicaset with 3 pods with a yaml file
 ```
 kubectl create -f deployment-definition.yml [--record]
+kubectl create deployment <deployment_name> --image=<image_name>
 
 <SHORNAME of deployments = deploy>
 kubectl get deployments [<deployment_name>]
