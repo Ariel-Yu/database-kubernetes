@@ -55,6 +55,7 @@ kubectl create deployment <deployment_name> --image=<image_name>
 kubectl get deployments [<deployment_name>]
 kubectl get deployments [<deployment_name>] -o wide
 kubectl describe deployments [<deployment_name>]
+kubectl explain deployments
 
 kubectl delete deployments <deployment_name>
 ```
@@ -62,6 +63,9 @@ kubectl delete deployments <deployment_name>
 ## Update
 
 ```
+kubectl scale --replicas=<new_number> -f <deployment_definition>
+kubectl scale --replicas=<new_number> deployment <deployment_name>
+
 kubectl apply -f <edited_definition_file>
 kubectl set image deployment/<deployment_name> <containers_name>: <image_name>
 
