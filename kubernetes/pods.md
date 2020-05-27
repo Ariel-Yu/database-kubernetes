@@ -1,6 +1,11 @@
 # Pods
 
+- [Pods concept](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/pods.md#pods-concept)
+- [Pods kubectl](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/pods.md#pods-kubectl)
+- [Pods yaml](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/pods.md#pods-yml)
+
 ## Pods concept
+
 * Pod usually has a **1:1** relationship with container
 * To scale up the application, we can add more pods with the **same** application image to the same node or add more nodes with containers with the **same** application image to the same cluster
 * A pod can have multiple containers. These containers usually have **different** application images. Some of the containers are usually helper containers of another container
@@ -11,6 +16,7 @@
 * Pod is transient, when a pod is down, pod managers (replicasets, deployments, daemonsets, statefulsets, jobs) are the ones responsible to bring up a new pod
 
 ## Pods kubectl
+
 ```
 kubectl run <pod_name> --image=<image_name> --restart=Never
 kubectl create -f <pod_definition_file>
@@ -21,6 +27,7 @@ kubectl get pods [<pod_name>]
 kubectl get pods [<pod_name>] -o wide
 kubectl describe pods [<pod_name>]
 kubectl explain pods[.spec.containers.image] --recursive [| wc] [| less]
+kubectl logs <pod_name>
 
 kubectl delete pods <pod_name>
 kubectl detele pods -l <label_name>: <label_value>
