@@ -20,6 +20,7 @@ kubectl create deployment <deployment_name> --image=<image_name> → Create a de
 kubectl get pods [<pod_name>]
 kubectl get pods [<pod_name>] -o wide
 kubectl describe pods [<pod_name>]
+kubectl explain pods[.spec.containers.image] --recursive [| wc] [| less]
 
 kubectl delete pods <pod_name>
 kubectl detele pods -l <label_name>: <label_value>
