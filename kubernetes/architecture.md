@@ -62,8 +62,7 @@ a Container Orchestration Technology
 
 ## Resources (Objects)
 * [Pod](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/pods.md)
-* Namespace
-* [Replicaset](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/controllers.md#replication-controllers--replicasets) *
+* [Replicaset](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/replicasets-&-repliation-controllers.md) *
    * Ensure that the desired number of pods are running in the cluster. The pods can be deployed on the same or different nodes
 * [Deployment](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/deployments.md) *
    * Create and kill pods of the same container in random sequence
@@ -74,5 +73,6 @@ a Container Orchestration Technology
 * Job *
 * CronJob *
 * [Service](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/services.md)
+* Namespace
 
 `* Different pod managers, managing pods with different manners`
