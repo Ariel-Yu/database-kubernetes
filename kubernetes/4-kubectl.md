@@ -38,7 +38,7 @@ kubectl logs <pod_name>
 
 kubectl delete pods <pod_name>
 
-kubectl exec -it <pod_name> -- /bin/bash -> Get into the container
+kubectl exec [-c <container_name>] -it <pod_name> -- /bin/bash -> Get into the container and run bash commands
 ```
 
 ## Nodes - no
