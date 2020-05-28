@@ -84,7 +84,7 @@ a Container Orchestration Technology
     * PersistentVolumeClaim
 
 6. Sharing data
-    * [Secrets](https://github.com/Ariel-Yu/knowledge-bases/tree/master/kubernetes)
+    * [Secrets](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.6.1-secrets.md)
     * ConfigMaps
   
 7. Security
