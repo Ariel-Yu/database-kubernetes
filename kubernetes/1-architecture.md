@@ -62,7 +62,6 @@ a Container Orchestration Technology
 
 ## Resources (Objects)
 * [Pod](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.1-pods.md)
-
 * [Replicaset](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.2-replicasets-&-repliation-controllers.md)
    * Ensure that the desired number of pods are running in the cluster. The pods can be deployed on the same or different nodes
 * [Deployment](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.3-deployments.md) *
@@ -71,18 +70,13 @@ a Container Orchestration Technology
    * Ensure that a container is deployed to all the nodes (one pod one node)
 * Statefulset *
    * Create and kill pods of the same container in sequence
-
 * Job *
 * CronJob *
-
 * [Service](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.4-services.md)
 * Endpoint
-
 * PersistentVolume
 * PersistentVolumeClaim
-
 * Namespace
-
 * Secrets
 * ConfigMaps
 
