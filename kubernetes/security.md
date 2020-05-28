@@ -3,7 +3,7 @@ There are 3 steps for accessing Kubernetes API:
 
 1. Authentication
 
-Kubernetes authentication is done by either one of the following:
+   Kubernetes authentication is done by either one of the following:
    * Basic username:password
    * Token
    * Certificate
@@ -12,16 +12,17 @@ Kubernetes authentication is done by either one of the following:
 
 2. Authorization
 
-Once a request is authenticated, Kubernetes is going to check what actions is the request allowed to perfrom. There are 3 authorization mode:
-  * ABAC (Action Based Access Control)
-  * RBAC (Role Based Access Control)
-  * WebHook
+   Once a request is authenticated, Kubernetes is going to check what actions are the request allowed to perfrom. There are 3 
+   authorization modes:
+    * ABAC (Action Based Access Control)
+    * RBAC (Role Based Access Control)
+    * WebHook
   
 3. Admission Control
 
 ## Security Resources
 
-* SecurityContext
+* [SecurityContext](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/security.md#securitycontext)
 * ServiceAccount, ClusterRole, RoleBinding
 * NetworkPolicy
 
@@ -49,4 +50,64 @@ spec:
       allowPrivilegeEscalation: false
       capabilities:
         add: ["NET_ADMIN", "SYS_TIME"]
+```
+
+### ServiceAccount, ClusterRole, RoleBinding
+
+1. Create a serviceaccount
+```
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+ name: secret-access-ariel
+```
+
+2. Create a clusterrole
+```
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+ name: secret-access-ariel
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - secrets
+  verbs:
+  - get
+  - list
+```
+
+3. Create a rolebinding
+```
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+ name: secret-ariel
+subjects:
+- kind: ServiceAccount
+  name: secret-access-ariel
+roleRef:
+ kind: ClusterRole
+ name: secret-access-ariel
+ apiGroup: rbac.authorization.k8s.io
+```
+
+4. Add serviceaccount to a pod
+```
+...
+spec:
+  serviceAccountName: <serviceaccount_name>
+  securityContext: {}
+  containers: [{}]
+  volumes: [{}]
+```
+
+## Security Resources kubectl
+```
+<SHORTNAME of serviceaccount = sa>
+kubectl get serviceaccount|clusterrole|rolebinding [<serviceaccount|clusterrole|rolebinding_name>]
+kubectl get serviceaccount|clusterrole|rolebinding [<serviceaccount|clusterrole|rolebinding_name>] -o wide
+kubectl describe serviceaccount|clusterrole|rolebinding [<serviceaccount|clusterrole|rolebinding_name>]
+kubectl explain serviceaccount|clusterrole|rolebinding
 ```
