@@ -61,10 +61,10 @@ a Container Orchestration Technology
 * Container runtime
 
 ## Resources (Objects)
-* Smallest handling unit in Kubernetes
+1. Smallest handling unit in Kubernetes
   * [Pod](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.1-pods.md)
 
-* Pod managers, managing pods with different manners
+2. Pod managers, managing pods with different manners
   * [Replicaset](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.2-replicasets-&-repliation-controllers.md): Ensure that the desired number of pods are running in the cluster. The pods can be deployed on the same or different nodes
   * [Deployment](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.3-deployments.md): Create and kill pods of the same container in random sequence. A replicaset will be created along with deployment creation
   * Daemonset: Ensure that a container is deployed to all the nodes (one pod one node)
@@ -72,21 +72,21 @@ a Container Orchestration Technology
   * Job
   * CronJob
 
-* Networking
+3. Networking
   * [Service](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.4-services.md)
   * Endpoint
 
-* Namespace
+4. Namespace
   * Namespace
 
-* Volume
+5. Volume
   * PersistentVolume
   * PersistentVolumeClaim
 
-* Sharing data
+6. Sharing data
   * Secrets
   * ConfigMaps
   
-* Security
+7. Security
   * ServiceAccount, ClusterRole, RoleBinding
   * NetworkPolicy
