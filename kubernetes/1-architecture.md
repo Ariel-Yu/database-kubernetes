@@ -61,7 +61,11 @@ a Container Orchestration Technology
 * Container runtime
 
 ## Resources (Objects)
+Smallest handling unit in Kubernetes
 * [Pod](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.1-pods.md)
+
+Pod managers,
+managing pods with different manners
 * [Replicaset](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.2-replicasets-&-repliation-controllers.md)
    * Ensure that the desired number of pods are running in the cluster. The pods can be deployed on the same or different nodes
 * [Deployment](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.3-deployments.md) *
@@ -72,12 +76,18 @@ a Container Orchestration Technology
    * Create and kill pods of the same container in sequence
 * Job *
 * CronJob *
+
+Networking
 * [Service](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.4-services.md)
 * Endpoint
+
+Namespaces
+* Namespace
+
+Volumes
 * PersistentVolume
 * PersistentVolumeClaim
-* Namespace
+
+Sharing data
 * Secrets
 * ConfigMaps
-
-`* Different pod managers, managing pods with different manners`
