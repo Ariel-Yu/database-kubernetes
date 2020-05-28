@@ -65,15 +65,15 @@ a Container Orchestration Technology
     * [Pod](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.1-pods.md)
 
 2. Pod managers, managing pods with different manners
-    * [Replicaset](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.2-replicasets-&-repliation-controllers.md): Ensure that the desired number of pods are running in the cluster. The pods can be deployed on the same or different nodes
-    * [Deployment](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.3-deployments.md): Create and kill pods of the same container in random sequence. A replicaset will be created along with deployment creation
+    * [Replicaset](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.2.1-replicasets-%26-repliation-controllers.md): Ensure that the desired number of pods are running in the cluster. The pods can be deployed on the same or different nodes
+    * [Deployment](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.2.2-deployments.md): Create and kill pods of the same container in random sequence. A replicaset will be created along with deployment creation
     * Daemonset: Ensure that a container is deployed to all the nodes (one pod one node)
     * Statefulset: Create and kill pods of the same container in sequence
     * Job
     * CronJob
 
 3. Networking
-    * [Service](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.4-services.md)
+    * [Service](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.3.1-services.md)
     * Endpoint
 
 4. Namespace
