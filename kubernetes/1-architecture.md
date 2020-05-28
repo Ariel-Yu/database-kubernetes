@@ -76,5 +76,6 @@ a Container Orchestration Technology
 * Endpoint
 * Namespace
 * PersistentVolume
+* PersistentVolumeClaim
 
 `* Different pod managers, managing pods with different manners`
