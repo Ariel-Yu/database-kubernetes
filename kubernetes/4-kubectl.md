@@ -14,11 +14,14 @@ kubectl create -f <definition_file>
 
 kubectl get <all|object> [<certain_object>]
 kubectl get <all|object> [<certain_object>] -o wide
+kubectl get <object> <certain_object> -o yaml [> <file_name>]
 kubectl get <all|object> -l <label_name>=<label_value>
 kubectl get <all|object> -n <namespace>
 kubectl get <all|object> --all-namespaces
 kubectl describe <object> [<certain_object>]
 kubectl explain <object> [--recursive] [| wc] [| less]
+
+kubectl edit <object> <object_name>
 
 kubectl delete <object> <certain_object>
 kubectl delete -f <definition_file>
