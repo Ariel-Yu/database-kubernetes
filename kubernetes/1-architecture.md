@@ -75,6 +75,7 @@ a Container Orchestration Technology
 3. Networking
     * [Service](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.3.1-services.md)
     * Endpoint
+    * Ingress
 
 4. Namespace
     * Namespace
