@@ -86,7 +86,8 @@ kubectl delete deployments <deployment_name>
 
 ```
 kubectl create -f <service_file>
-kubectl expose <replicaset|deployment> <replicaset|deployment_name> --port=<port> [--name=<service_name>] [--type=<PortNode|ClusterIP>]
+kubectl create service <nodeport|clusterip> <pod|replicaset|deployment_name> [--name=<service_name>] --tcp=<port> 
+kubectl expose <pod|replicaset|deployment> <pod|replicaset|deployment_name> --port=<port> [--name=<service_name>] [--type=<PortNode|ClusterIP>]
 
 kubectl get services [<service_name>]
 kubectl get services [<service_name>] -o wide
