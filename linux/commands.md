@@ -1,3 +1,15 @@
+- [Strings]()
+- [Files]()
+- [Directories]()
+- [System porcesses]()
+- [IP addresses]()
+- [Networking]()
+
+### Strings
+
+> `echo string_you_want_to_encode | base64`
+- Encode string in base64
+
 ### Files
 
 > `find / -name <file_name>`
@@ -35,11 +47,6 @@
 > `capsh --decode=<capabilities>`
 - Decode the linux capabilities
 
-### Strings
-
-> `echo string_you_want_to_encode | base64`
-- Encode string in base64
-
 ### IPs
 
 > `curl ifconfig.me`
@@ -47,7 +54,7 @@
 
 ### Networking
 
-> `nc` (Netcat)
+> `nc` <IP> <port> (Netcat)
 - v: verbose mode
 - z: scan for listening daemons, without actually sending any data to them
 - w: specifies a timeout for connection that can not be established
