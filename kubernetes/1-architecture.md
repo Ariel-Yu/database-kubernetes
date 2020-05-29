@@ -88,5 +88,5 @@ a Container Orchestration Technology
     * ConfigMaps
   
 7. Security
-    * [ServiceAccount, ClusterRole, RoleBinding](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/5.security.md#serviceaccount-clusterrole-rolebinding)
-    * [NetworkPolicy](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/5.security.md#network-policy)
+    * [ServiceAccount, ClusterRole, RoleBinding](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/5-security.md#serviceaccount-clusterrole-rolebinding)
+    * [NetworkPolicy](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/5-security.md#network-policy)
