@@ -25,8 +25,8 @@ There are 3 steps for accessing Kubernetes API:
 ## Security Resources
 
 * [SecurityContext](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/security.md#securitycontext)
-* ServiceAccount, ClusterRole, RoleBinding
-* NetworkPolicy
+* [ServiceAccount, ClusterRole, RoleBinding](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/security.md#serviceaccount-clusterrole-rolebinding)
+* [NetworkPolicy](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/security.md#network-policy)
 
 ### SecurityContext
 Security context can be added at pod and container level. Container level security context will out rule pod level security context
@@ -109,7 +109,29 @@ spec:
 ### Network Policy
 
 ```
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: deny-default
+spec:
+  podSelector: {}
+  policyTypes:
+  - Egress
+  - Ingress
+  ingress:
+  - from:
+    - ipBlock:
+            cidr: 192.168.0.0/16
+    ports:
+    - port: 80
+      protocol: TCP
 ```
+
+1. All outbound networking from the cluster will be blocked `Egress`
+2. Inbound networking in the cluster will be blocked `Igress` except `ingress.from`
+   - IPs in the range under `ipBlock`
+   - Ports with portocal under `ports`
+3. `name: deny-default`
 
 ## Security Resources kubectl
 ```
