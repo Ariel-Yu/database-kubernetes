@@ -24,9 +24,9 @@ There are 3 steps for accessing Kubernetes API:
 
 ## Security Resources
 
-* [SecurityContext](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/security.md#securitycontext)
-* [ServiceAccount, ClusterRole, RoleBinding](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/security.md#serviceaccount-clusterrole-rolebinding)
-* [NetworkPolicy](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/security.md#network-policy)
+* [SecurityContext](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/5-security.md#securitycontext)
+* [ServiceAccount, ClusterRole, RoleBinding](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/5-security.md#serviceaccount-clusterrole-rolebinding)
+* [NetworkPolicy](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/5-security.md#network-policy)
 
 ### SecurityContext
 Security context can be added at pod and container level. Container level security context will out rule pod level security context
