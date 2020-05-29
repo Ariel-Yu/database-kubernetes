@@ -34,7 +34,7 @@ kubectl get pods [<pod_name>]
 kubectl get pods [<pod_name>] -o wide
 kubectl describe pods [<pod_name>]
 kubectl explain pods
-kubectl logs <pod_name>
+kubectl logs <pod_name> [<container_name>]
 
 kubectl delete pods <pod_name>
 
