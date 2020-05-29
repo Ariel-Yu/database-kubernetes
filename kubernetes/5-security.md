@@ -104,7 +104,7 @@ spec:
   containers: [{}]
   volumes: [{}]
 ```
-> The pod will only have the permission to get and list secrets by the rules defined in clusterrole binded with the serviceaccount
+   - The pod will only have the permission to get and list secrets by the rules defined in clusterrole binded with the serviceaccount
 
 ### Network Policy
 
