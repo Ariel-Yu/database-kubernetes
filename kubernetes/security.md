@@ -12,13 +12,15 @@ There are 3 steps for accessing Kubernetes API:
 
 2. Authorization
 
-   Once a request is authenticated, Kubernetes is going to check what actions are the request allowed to perfrom. There are 3 
-   authorization modes:
+   Permission at role level. Once a request is authenticated, Kubernetes is going to check what actions are the request 
+   allowed to perfrom. There are 3 authorization modes:
     * ABAC (Action Based Access Control)
     * RBAC (Role Based Access Control)
     * WebHook
   
 3. Admission Control
+
+   Permission at cluter level. Verify what actions are allowed in the certain cluster
 
 ## Security Resources
 
@@ -101,6 +103,12 @@ spec:
   securityContext: {}
   containers: [{}]
   volumes: [{}]
+```
+> The pod will only have the permission to get and list secrets by the rules defined in clusterrole binded with the serviceaccount
+
+### Network Policy
+
+```
 ```
 
 ## Security Resources kubectl
