@@ -45,3 +45,9 @@
 > `curl ifconfig.me`
 - Get the IP address of the local machine
 
+### Networking
+
+> `nc` (Netcat)
+- v: verbose mode
+- z: scan for listening daemons, without actually sending any data to them
+- w: specifies a timeout for connection that can not be established
