@@ -50,11 +50,15 @@
 ### IPs
 
 > `curl ifconfig.me`
-- Get the IP address of the local machine
+- Get the public IP address of the local machine
+
+> `ip a`
+- Get the IP addresses of the local machine 
+- Linux
 
 ### Networking
 
 > `nc` <IP> <port> (Netcat)
 - v: verbose mode
 - z: scan for listening daemons, without actually sending any data to them
-- w: specifies a timeout for connection that can not be established
+- w <number>: specifies a timeout <number> for connection that can not be established
