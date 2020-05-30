@@ -1,9 +1,9 @@
-- [Strings]()
-- [Files]()
-- [Directories]()
-- [System porcesses]()
-- [IP addresses]()
-- [Networking]()
+- [Strings](https://github.com/Ariel-Yu/knowledge-bases/blob/master/linux/commands.md#strings)
+- [Files](https://github.com/Ariel-Yu/knowledge-bases/blob/master/linux/commands.md#files)
+- [Directories](https://github.com/Ariel-Yu/knowledge-bases/blob/master/linux/commands.md#directories)
+- [System porcesses](https://github.com/Ariel-Yu/knowledge-bases/blob/master/linux/commands.md#system-processes)
+- [IP addresses](https://github.com/Ariel-Yu/knowledge-bases/blob/master/linux/commands.md#ip-addresses)
+- [Networking](https://github.com/Ariel-Yu/knowledge-bases/blob/master/linux/commands.md#networking)
 
 ### Strings
 
@@ -15,19 +15,25 @@
 > `find / -name <file_name>`
 - Find <file_name> from root
 
-> `chmod +x <file_name>`
-- Make <file_name> executable
+> `chmod <+|-><r|w|x> <file_name>`
+- Change <file_name> permission
+  - **+**: grant permission
+  - **-**: disable permission
+  - r: read access
+  - w: write access
+  - x: executable access
 
 > `content | tee <file_name>`
 - Output content to <file_name>
 
-> `echo <content> > <file_name>`
-- Create <file_name> with <content>
+> `echo <some_content> > <file_name>`
+- Create <file_name> with <some_content>
 
-> `echo <content> >> <file_name>`
-- Append <content> in <file_name>
+> `echo <some_content> >> <file_name>`
+- Append <some_content> in <file_name>
 
 > `cat|tail|less|more <file_name>`
+- view <file_name>
 
 ### Directories
 
