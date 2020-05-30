@@ -81,6 +81,7 @@ a Container Orchestration Technology
     * Namespace
 
 5. Volume
+    * [volumeMounts](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.1-pods.md#pods-yml) (feature of pods)
     * PersistentVolume
     * PersistentVolumeClaim
 
