@@ -27,6 +27,10 @@ kubectl delete <object> <certain_object>
 kubectl delete -f <definition_file>
 ```
 
+```
+kubectl create <replicaset|deployment> <replicaset|deployment_name> --image=<image_name> --try-run=<server|client> [-o yaml]
+```
+
 ## Pods - po
 
 ```
