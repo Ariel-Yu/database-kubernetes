@@ -53,7 +53,7 @@
 > `capsh --decode=<capabilities>`
 - Decode the linux capabilities
 
-### IPs
+### IP addresses
 
 > `curl ifconfig.me`
 - Get the public IP address of the local machine
