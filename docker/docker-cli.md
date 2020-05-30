@@ -17,4 +17,6 @@ docker images -> List all the docker images in local cache
 docker image -a -> List all the docker images in local cache
 
 docker image rm <image_name> -> Remove docker image <image_name>
+
+docker image inspect <image_name> -> Display detailed information of (an) image(s)
 ```
