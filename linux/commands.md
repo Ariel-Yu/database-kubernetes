@@ -63,7 +63,7 @@
 - x = also show processes not attached to a terminal
 
 > `grep Cap /proc/<PID>/status`
-- See the [linux capabilities](https://github.com/torvalds/linux/blob/master/include/uapi/linux/capability.h) of the process with <PID>
+- See the [linux capabilities](https://github.com/torvalds/linux/blob/master/include/uapi/linux/capability.h) of the process with \<PID>
 
 > `capsh --decode=<capabilities>`
 - Decode the linux capabilities
@@ -73,9 +73,12 @@
 > `curl ifconfig.me`
 - Get the public IP address of the local machine
 
+> `config.me`
+- Display network interfaces
+
 > `ip a`
-- Get the IP addresses of the local machine 
-- Linux
+- Display network interfaces
+- From [iproute2util](https://www.tecmint.com/ifconfig-vs-ip-command-comparing-network-configuration/) only available for linux kernal OS
 
 ### Networking
 
