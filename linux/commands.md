@@ -41,11 +41,11 @@
 > `content | tee <file_name>`
 - Output content to <file_name>
 
-> `echo <some_content> > <file_name>`
-- Create <file_name> with <some_content>
+> `echo <content> > <file_name>`
+- Create <file_name> with \<content>
 
-> `echo <some_content> >> <file_name>`
-- Append <some_content> in <file_name>
+> `echo <content> >> <file_name>`
+- Append \<content> in <file_name>
 
 > `cat|tail|less|more <file_name>`
 - view <file_name>
@@ -82,7 +82,7 @@
 
 ### Networking
 
-> `nc` <IP> <port> (Netcat)
+> `nc <IP> <port>` (Netcat)
 - v: verbose mode
 - z: scan for listening daemons, without actually sending any data to them
 - w <number>: specifies a timeout <number> for connection that can not be established
