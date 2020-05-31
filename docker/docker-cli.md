@@ -6,7 +6,8 @@
 docker build -t <image_name> <directory> -> Create a docker image with tag <image_name> in the directory <directory>
 docker run <image_name> -> Run the docker image
 
-docker tag <image_name:image_version> <registry_ip>/<image_name>
+docker tab <source_image_name>[:<source_image_version>]|<source_image_id> <target_image_name>[:<targe_image_version>] -> Push the image to central registry
+docker tag <source_image_name>[:<source_image_version>]|<source_image_id> <registry_ip>:<registry_port>/<target_image_name>[:<target_image_version>] -> Push the image to local registry
 docker push <registry_ip>/<image_name>
 ```
 
