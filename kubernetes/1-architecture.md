@@ -81,7 +81,7 @@ a Container Orchestration Technology
     * Namespace
 
 5. Volume
-    * [volumeMounts](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.1-pods.md#pods-yml) (feature of pods)
+    * [volumeMounts](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.1-pods.md#volumemounts) (feature of pods)
     * PersistentVolume
     * PersistentVolumeClaim
 
@@ -90,6 +90,6 @@ a Container Orchestration Technology
     * ConfigMaps
   
 7. Security
-    * securityContext (feature of pods)
+    * [securityContext](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.1-pods.md#securitycontext) (feature of pods)
     * [ServiceAccount, ClusterRole, RoleBinding](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/5-security.md#serviceaccount-clusterrole-rolebinding)
     * [NetworkPolicy](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/5-security.md#network-policy)
