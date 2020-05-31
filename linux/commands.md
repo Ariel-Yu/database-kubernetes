@@ -57,10 +57,14 @@
 ### System processes
 
 > `ps aux`
-- ps: processes status from /proc file
-- a = show processes for all users
-- u = display the process's user/owner
-- x = also show processes not attached to a terminal
+- See all the processes on the system using BSD syntax
+  - ps: processes status from /proc file
+  - a = show processes for all users
+  - u = display the process's user/owner
+  - x = also show processes not attached to a terminal
+
+> `ps -ef`
+- See all the processes on the system using standard syntax
 
 > `grep Cap /proc/<PID>/status`
 - See the [linux capabilities](https://github.com/torvalds/linux/blob/master/include/uapi/linux/capability.h) of the process with \<PID>
