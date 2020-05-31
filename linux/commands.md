@@ -39,7 +39,7 @@
   - x: executable access
 
 > `content | tee <file_name>`
-- Output content to <file_name>
+- Output \<content> to <file_name>
 
 > `echo <content> > <file_name>`
 - Create <file_name> with \<content>
