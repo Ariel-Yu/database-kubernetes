@@ -10,6 +10,21 @@
 > `echo string_you_want_to_encode | base64`
 - Encode string in base64
 
+> `wc <file_name>`
+
+> `<output> | wc`
+- Word count of a file or an output
+- \# of lines / word count / charater count / file name
+  - -l: # of lines
+  - -w: word count
+  - -c: count of byte
+  - -m: character count
+  
+> `wc <file_name1> <file_name2>`
+- \# of lines / word count / charater count / file name 1
+- \# of lines / word count / charater count / file name 2
+- \# of lines / word count / charater count / total
+
 ### Files
 
 > `find / -name <file_name>`
