@@ -30,6 +30,12 @@
 > `find / -name <file_name>`
 - Find <file_name> from root
 
+> `grep -Ril <content_to_find> <from_where_to_start>`
+- Find <content_to_find> from <from_where_to_start>
+- R: Recursively find
+- i: Case insensitive
+- l: Show names of the files include <content_to_find>
+
 > `chmod <+|-><r|w|x> <file_name>`
 - Change <file_name> permission
   - **+**: grant permission
