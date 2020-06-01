@@ -69,7 +69,7 @@ a Container Orchestration Technology
     * [Deployment](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.2.2-deployments.md): Create and kill pods of the same container in random sequence. A replicaset will be created along with deployment creation
     * Daemonset: Ensure that a container is deployed to all the nodes (one pod one node)
     * Statefulset: Create and kill pods of the same container in sequence
-    * Job
+    * [Job](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.2.5-jobs.md)
     * CronJob
 
 3. Networking
