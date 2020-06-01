@@ -70,7 +70,7 @@ a Container Orchestration Technology
     * Daemonset: Ensure that a container is deployed to all the nodes (one pod one node)
     * Statefulset: Create and kill pods of the same container in sequence
     * [Job](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.2.5-jobs.md)
-    * CronJob
+    * [CronJob](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.2.6-cronJobs.md)
 
 3. Networking
     * [Service](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.3.1-services.md)
