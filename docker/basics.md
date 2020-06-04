@@ -1,5 +1,10 @@
 # Docker basics
 
+- [Docker engine](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/basics.md#docker-engine)
+- [Docker registries](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/basics.md#docker-registries)
+- [Docker objects](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/basics.md#docker-objects)
+- [Reference](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/basics.md#reference)
+
 ## Docker engine
 Docker engine is a server-client application which builds and containerizes other applications. Docker engine includes:
 
@@ -29,24 +34,5 @@ Docker registry is the store of Docker images.
 - Services
     - Services allow the containers to be scaled to multiple Docker Daemons. Each Docker Daemon will communicate with each other through Docker APIs. 
 
-## Docker compose
-```
-docker-compose [--verbose] up [--build]
-```
-* --verbose: Give process details
-* --build: Build images before starting containers
-* Should be in the same directory of the docker-compose.yml
-
-```
-docker-compose run [application-name] [language exe command] [file_name absolute path]
-docker-compose run --name [customized_contianer_name] [application-name] [language exe command] [file_name with absolute path]
-```
-Ex: docker-compose run pykafka_benchmark python3 /usr/src/app/test_pykafka_producer.py
-
-```
-docker-compose down
-```
-Kill and remove all containers from the current docke_compose.yml
-
-# Reference
+## Reference
 - https://docs.docker.com/get-started/overview/#docker-architecture
