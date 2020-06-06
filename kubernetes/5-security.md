@@ -127,8 +127,8 @@ spec:
       protocol: TCP
 ```
 
-1. All outbound networking from the cluster will be blocked `Egress`
-2. Inbound networking in the cluster will be blocked `Igress` except `ingress.from`
+1. All outbound networking from the cluster will be blocked by `Egress`
+2. Inbound networking in the cluster will be blocked by `Igress` except `ingress.from`
    - IPs in the range under `ipBlock`
    - Ports with portocal under `ports`
 3. `name: deny-default`
