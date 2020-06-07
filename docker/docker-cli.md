@@ -4,6 +4,9 @@
   - [Run a docker image](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#run-a-docker-image)
   - [Execute an iteractive bash shell inside a running docker image (container)](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#execute-an-iteractive-bash-shell-inside-a-running-docker-image-container)
 - [docker image](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#docker-image)
+  - [View docker images]()
+  - [Inspect docker images]()
+  - [Remove docker images]()
 - [docker-compose](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#docker-compose)
 
 ## docker
@@ -64,21 +67,49 @@ docker exec -t <container_id> /bin/bash
 ```
 
 ## docker image
+
+### View docker images
 ```
 docker images
-docker image
+docker images -a
 ```
 - List all the docker images in local cache
 
+```
+docker images -q
+docker images --no-trunc
+```
+- `-q`: Only list the IDs of images
+- `--no-trunc`: Don't truncate output
+
+```
+docker images -f "dangling=true"
+```
+- `-f` or `--filter`
+- `dangling=true`: untagged images
+
+### Inspect docker images
+```
+docker image inspect <image_name>
+```
+- Display detailed information of (an) image(s)
+
+### Remove docker images
 ```
 docker image rm <image_name>
 ```
 - Remove docker image <image_name>
 
 ```
-docker image inspect <image_name>
+docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
+docker image prune
 ```
-- Display detailed information of (an) image(s)
+- Remove untagged images
+
+```
+docker image prune -a
+```
+- Remove docker images that are not referenced by any container
 
 ## docker-compose
 ```
