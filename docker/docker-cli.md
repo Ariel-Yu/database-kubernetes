@@ -2,15 +2,26 @@
 
 ## docker
 
+### Build a docker image
 ```
-docker build -t <image_name> <directory> -> Create a docker image with tag <image_name> in the directory <directory>
-docker run <image_name> -> Run the docker image
+docker build -t <image_name> <image_location> -> Create a docker image with tag <image_name> in the location <image_location>
 
 docker tag <source_image_name>[:<source_image_version>]|<source_image_id> <target_image_name>[:<targe_image_version>] -> Push the image to central registry
 docker tag <source_image_name>[:<source_image_version>]|<source_image_id> <registry_ip>:<registry_port>/<target_image_name>[:<target_image_version>] -> Push the image to local registry
 docker push <registry_ip>/<image_name>
+```
 
-docker exec -it <container_id> /bin/bahs -> Execute an iteractive bash shell inside a running docker image (container)
+### Run a docker image
+
+```
+docker run <image_name>
+docker run <image_name> <executable_command> <parameters> -> Replace default command and parameters
+docker run --entrypoint <executable_command> <image_name> <parameters> -> Replace default entrypoint and parameters
+```
+
+### Execute an iteractive bash shell inside a running docker image (container)
+```
+docker exec -t <container_id> /bin/bash
 ```
 
 ## docker image
