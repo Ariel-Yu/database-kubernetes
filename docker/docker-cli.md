@@ -1,6 +1,7 @@
 # Docker CLI
 - [docker](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#docker)
   - [Build a docker image](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#build-a-docker-image)
+  - [Push a docker image to your docker hub](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#build-a-docker-image)
   - [Run a docker image](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#run-a-docker-image)
   - [Execute an iteractive bash shell inside a running docker image (container)](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#execute-an-iteractive-bash-shell-inside-a-running-docker-image-container)
 - [docker image](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#docker-image)
@@ -22,6 +23,14 @@ docker tag <source_image_name>[:<source_image_version>]|<source_image_id> <targe
 docker tag <source_image_name>[:<source_image_version>]|<source_image_id> <registry_ip>:<registry_port>/<target_image_name>[:<target_image_version>] -> Push the image to local registry
 docker push <registry_ip>/<image_name>
 ```
+
+### Push a docker image to your docker hub
+```
+docker tag <image_name> <your_docker_hub_account>/<image_name>
+docker push <your_docker_hub_account>/<image_name>
+```
+- ex: docker tag my-ubuntu arielyu0531/my-ubuntu
+- ex: docker push arielyu0531/my-ubuntu
 
 ### Run a docker image
 ```
