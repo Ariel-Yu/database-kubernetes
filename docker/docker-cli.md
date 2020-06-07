@@ -1,4 +1,10 @@
 # Docker CLI
+- docker
+  - Build a docker image
+  - Run a docker image
+  - Execute an iteractive bash shell inside a running docker image (container)
+- docker image
+- docker-compose
 
 ## docker
 
@@ -18,6 +24,7 @@ docker push <registry_ip>/<image_name>
 ```
 docker run <image_name>
 ```
+- Run docker image <image_name>
 
 ```
 docker run <image_name> <executable_command> <parameters>
