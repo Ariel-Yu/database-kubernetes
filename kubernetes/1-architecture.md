@@ -87,7 +87,7 @@ a Container Orchestration Technology
 
 6. Sharing data
     * [Secrets](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.6.1-secrets.md)
-    * ConfigMaps
+    * [ConfigMaps](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.6.2-configMaps.md)
   
 7. Security
     * [securityContext](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.1-pods.md#securitycontext) (feature of pods)
