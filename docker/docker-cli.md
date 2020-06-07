@@ -1,7 +1,7 @@
 # Docker CLI
 - [docker](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#docker)
   - [Build a docker image](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#build-a-docker-image)
-  - [Push a docker image to your docker hub](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#build-a-docker-image)
+  - [Push a docker image to your docker hub](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#push-a-docker-image-to-your-docker-hub)
   - [Run a docker image](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#run-a-docker-image)
   - [Execute an iteractive bash shell inside a running docker image (container)](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#execute-an-iteractive-bash-shell-inside-a-running-docker-image-container)
 - [docker image](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#docker-image)
