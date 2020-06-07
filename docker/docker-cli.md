@@ -9,6 +9,7 @@
   - [Inspect docker images](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#inspect-docker-images)
   - [Remove docker images](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#remove-docker-images)
 - [docker-compose](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#docker-compose)
+- [References](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#references)
 
 ## docker
 
@@ -138,3 +139,6 @@ docker-compose run --name [customized_contianer_name] [application-name] [langua
 docker-compose down
 ```
 - Kill and remove all containers from the current docke_compose.yml
+
+## References
+- https://stackoverflow.com/questions/41984399/denied-requested-access-to-the-resource-is-denied-docker
