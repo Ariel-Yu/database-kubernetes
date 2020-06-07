@@ -7,8 +7,13 @@
 
 ### Strings
 
-> `echo string_you_want_to_encode | base64`
+> `echo string_you_want_to_encode -n | base64`
 - Encode string in base64
+- -n avoid newline
+
+> `echo string_you_want_to_decode -n | base64 --decode`
+- Decode string from base64
+- -n avoid newline
 
 > `wc <file_name>`
 
