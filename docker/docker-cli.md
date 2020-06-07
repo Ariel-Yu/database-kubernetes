@@ -4,9 +4,9 @@
   - [Run a docker image](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#run-a-docker-image)
   - [Execute an iteractive bash shell inside a running docker image (container)](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#execute-an-iteractive-bash-shell-inside-a-running-docker-image-container)
 - [docker image](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#docker-image)
-  - [View docker images]()
-  - [Inspect docker images]()
-  - [Remove docker images]()
+  - [View docker images](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#view-docker-images)
+  - [Inspect docker images](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#inspect-docker-images)
+  - [Remove docker images](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#remove-docker-images)
 - [docker-compose](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/docker-cli.md#docker-compose)
 
 ## docker
