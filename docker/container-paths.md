@@ -4,7 +4,7 @@
 - [See docker root directory in the virtual environment](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/container-paths.md#see-docker-root-directory-in-the-virtual-environment)
 - [See the internal structure of a docker image](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/container-paths.md#see-the-internal-structure-of-a-docker-image)
 - [See the internal structure of a running docker image - container](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/container-paths.md#see-the-internal-structure-of-a-running-docker-image---container)
-- [Reference](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/container-paths.md#reference)
+- [References](https://github.com/Ariel-Yu/knowledge-bases/blob/master/docker/container-paths.md#references)
 
 ## Docker info
 `docker info`
@@ -40,7 +40,7 @@ ls -la /var/lib/docker
 docker exec -it <container_id> /bin/bash
 ```
 
-## Reference
+## References
 - https://www.freecodecamp.org/news/where-are-docker-images-stored-docker-container-paths-explained/ 
 - https://phase2.github.io/devtools/common-tasks/ssh-into-a-container/
 
