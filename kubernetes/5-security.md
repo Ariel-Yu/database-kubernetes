@@ -26,10 +26,12 @@ There are 3 steps for accessing Kubernetes API:
 
 * [SecurityContext](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/5-security.md#securitycontext)
 * [ServiceAccount, ClusterRole, RoleBinding](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/5-security.md#serviceaccount-clusterrole-rolebinding)
-* [NetworkPolicy](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/5-security.md#network-policy)
+* [NetworkPolicy](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/5-security.md#networkpolicy)
 
 ### SecurityContext
-Security context can be added at pod and container level. Container level security context will out rule pod level security context
+- Security context can be added at **pod** and **container** level
+- Container level security context will out rule pod level security context
+- `capabilities` is only supported at the **container** level
 
 ```
 apiVersion: v1
@@ -104,9 +106,9 @@ spec:
   containers: [{}]
   volumes: [{}]
 ```
-   - The pod will only have the permission to get and list secrets by the rules defined in clusterrole binded with the serviceaccount
+   - The pod will only have the permission to get and list secrets by the rules defined in clusterrole binded with the serviceaccount which the pod is using
 
-### Network Policy
+### NetworkPolicy
 
 ```
 apiVersion: networking.k8s.io/v1
