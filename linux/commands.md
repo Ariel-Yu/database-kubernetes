@@ -4,6 +4,7 @@
 - [System porcesses](https://github.com/Ariel-Yu/knowledge-bases/blob/master/linux/commands.md#system-processes)
 - [IP addresses](https://github.com/Ariel-Yu/knowledge-bases/blob/master/linux/commands.md#ip-addresses)
 - [Networking](https://github.com/Ariel-Yu/knowledge-bases/blob/master/linux/commands.md#networking)
+- [Environment variables](https://github.com/Ariel-Yu/knowledge-bases/blob/master/linux/commands.md#environment-variables)
 
 ### Strings
 
@@ -101,3 +102,8 @@
 - v: verbose mode
 - z: scan for listening daemons, without actually sending any data to them
 - w <number>: specifies a timeout <number> for connection that can not be established
+  
+### Environment variables
+
+> `printenv`
+- See all the environment variables
