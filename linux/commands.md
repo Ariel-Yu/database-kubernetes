@@ -80,7 +80,9 @@
 > `grep Cap /proc/<PID>/status`
 - See the [linux capabilities](https://github.com/torvalds/linux/blob/master/include/uapi/linux/capability.h) of the process with \<PID>
 
-> `capsh --decode=<capabilities>`
+> `capsh --decode=<capability>`
+
+> `docker run cmd.cat/capsh capsh --decode=<capability>`
 - Decode the linux capabilities
 
 ### IP addresses
