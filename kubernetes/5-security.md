@@ -66,11 +66,12 @@ metadata:
  name: secret-access-ariel
 ```
 
-- There will be a token automatically generated as a secret object for every service account creation
+- There will be a token automatically generated as a secret object for every service account created
 - The token can be used by applications that are outside of the cluster as authentication to talk to kube-apiserver
 - In every namespace, there is a service account named `default` automatically generated with a token as a secret object
    - This secret object of the `default` service account is automatically mounted to every pod that is created in the same namespace
    - The token can be viewed in the container under the path `/var/run/secrets/kubernetes.io/serviceaccount/token` (`kubectl get po <pod_name>` to find the path)
+- Service account is configured on the **pod** level
 
 2. Create a clusterrole
 ```
