@@ -85,6 +85,9 @@
 > `docker run cmd.cat/capsh capsh --decode=<capability>`
 - Decode the linux capabilities
 
+> `apt-get update && apt-get install -y procps`
+- Install procps within container since `ps` is not pre-installed in the `wheezy` image
+
 ### IP addresses
 
 > `curl ifconfig.me`
