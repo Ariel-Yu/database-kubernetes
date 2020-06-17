@@ -77,8 +77,10 @@ a Container Orchestration Technology
     * Endpoint
     * Ingress
 
-4. Namespace
-    * [Namespace](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.4-namespaces.md)
+4. Cluster
+    * [Namespace](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.4.1-namespaces.md)
+    * [Context]()
+    * [Authentication]()
 
 5. Volume
     * [volumeMounts](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.1-pods.md#volumemounts) (feature of pods)
