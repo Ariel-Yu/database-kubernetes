@@ -79,8 +79,8 @@ a Container Orchestration Technology
 
 4. Cluster
     * [Namespace](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.4.1-namespaces.md)
-    * [Context]()
-    * [Authentication]()
+    * [Context](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.4.2-contexts)
+    * [Authentication](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.4.3-Authorization.md)
 
 5. Volume
     * [volumeMounts](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kubernetes/3.1-pods.md#volumemounts) (feature of pods)
