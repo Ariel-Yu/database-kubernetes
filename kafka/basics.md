@@ -19,6 +19,9 @@
 ## Consumer
 - Consumers are systems that consume data from the kafka brokers
 - Consumers can read from many topics/partitions/brokers
+- Consumer offset: keep track of the last message read
+  - Each consumer has an offset per partition per topic
+  - That's why multiple consumers can consume from the same topic on their own paths
 
 ## Topic
 - Each topic can have multiple partitions to enable higher throughput and lowever latency
