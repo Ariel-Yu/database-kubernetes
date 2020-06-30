@@ -1,9 +1,11 @@
 # Kafka basics
-- (Producer)[]
-- (Broker)[]
-- (Consumer)[]
-- (Topic)[]
-- (Partition)[]
+- [Producer](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kafka/basics.md#producer)
+- [Broker](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kafka/basics.md#broker)
+- [Consumer](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kafka/basics.md#consumer)
+- [Topic](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kafka/basics.md#topic)
+- [Partition](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kafka/basics.md#partition)
+- [Data element](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kafka/basics.md#data-element-recordmessageevent)
+- [Zookeeper](https://github.com/Ariel-Yu/knowledge-bases/blob/master/kafka/basics.md#zookeeper)
 
 ## Producer
 - Producers are systems that are responsible for producing data into Kafka brokers
