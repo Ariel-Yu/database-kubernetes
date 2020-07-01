@@ -21,14 +21,14 @@
 - Consumers can read from many topics/partitions/brokers
 - Consumer offset: keep track of the last message read
   - Each consumer has an offset per partition per topic
-  - That's why multiple consumers can consume from the same topic on their own paths
+  - That's why multiple consumers can consume from the same topic/partition on their own paths
 
 ## Topic
 - Each topic can have multiple partitions to enable higher throughput and lowever latency
 - Each topic has an retention time defined to indicate how long the data may live in Kafka
 
 ## Partition
-- Each partition can have multiple segments depends on the size of the data to enable optimization of I/O
+- Each partition can have multiple segments stored on brokers depends on the size of the data to enable optimization of I/O
 - Partitions of the same topic may live on different brokers
 - Purposes of partitions
   - Load balancing
@@ -45,9 +45,10 @@
 - Body
   - Key
   - Value
+- After the data is written to the logs/segments, the data stays immutable
 
 ## Zookeeper  
 - Cluster management
 - Failure detection and recovery
-- Store ACLs and screts
+- Store ACLs and secrets
 - An ensemble is usually formed by 3~5 servers
